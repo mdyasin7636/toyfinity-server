@@ -42,12 +42,6 @@ async function run() {
       res.send(result);
     })
 
-    // app.get('/toys', async(req, res) => {
-    //   const query = { category: 'transformer'}
-    //   const result = await toyCollection.find(query).toArray();
-    //   res.send(result)
-    // })
-
     app.get('/myToys/:email', async (req, res) => {
       console.log(req.params.email);
       const result = await toyCollection.find({email: req.params.email}).toArray();
