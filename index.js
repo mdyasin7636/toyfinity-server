@@ -94,7 +94,7 @@ run().catch(console.dir);
 
 
 app.get('/', (req, res) => {
-    res.send('Toyfinity is running')
+    res.send('Toyfinity is Running')
 })
 
 app.listen(port, () => {
